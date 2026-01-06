@@ -3,18 +3,17 @@ info:
   title: Gerador de Dietas e Treinos de Academia com IA - API
   description: |
     API que gera planos semanais de dieta e programas de treinamento através de um agente de IA.
-    As respostas dos endpoints que geram planos são transmitidas como stream SSE (`text/event-stream`) contendo texto em Markdown (pt-BR).
+    As respostas são transmitidas como stream SSE (`text/event-stream`).
   version: "1.0.0"
 servers:
-  - url: https://gerador-de-planos-fitness-api.onrender.com
-    description: Servidor de Produção (Render)
+  - url: /
+    description: Servidor Atual (Vercel)
   - url: http://localhost:3333
     description: Servidor local
 paths:
   /test:
     get:
       summary: Health check
-      description: Retorna uma mensagem simples para verificar se o servidor está disponível.
       responses:
         '200':
           description: OK
@@ -23,7 +22,6 @@ paths:
               schema:
                 type: string
                 example: Hello World
-
   /diet-plan:
     post:
       summary: Gerar plano alimentar

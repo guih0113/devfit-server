@@ -14,7 +14,8 @@ export const app = Fastify()
 
 await app.register(cors, {
   origin: '*',
-  methods: ['GET', 'POST']
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 })
 
 app.register(dietPlanRoutes)
