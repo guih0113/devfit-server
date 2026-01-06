@@ -4,8 +4,8 @@ import cors from '@fastify/cors'
 import fastifySwagger from '@fastify/swagger'
 import fastifySwaggerUi from '@fastify/swagger-ui'
 import Fastify from 'fastify'
-import { dietPlanRoutes } from './routes/diet-plan'
-import { trainingPlanRoutes } from './routes/training-plan'
+import { dietPlanRoutes } from './routes/diet-plan.js'
+import { trainingPlanRoutes } from './routes/training-plan.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -23,8 +23,8 @@ app.register(trainingPlanRoutes)
 app.register(fastifySwagger, {
   mode: 'static',
   specification: {
-    path: path.resolve(__dirname, 'docs', 'openapi.yaml'),
-    baseDir: path.resolve(__dirname, 'docs')
+    path: path.resolve(process.cwd(), 'src/docs/openapi.yaml'),
+    baseDir: path.resolve(process.cwd(), 'src/docs')
   }
 })
 

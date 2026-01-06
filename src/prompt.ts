@@ -1,4 +1,4 @@
-import type { DietPlanRequest, TrainingPlanRequest } from './types'
+import type { DietPlanRequest, TrainingPlanRequest } from './types.js'
 
 export function buildSystemPromptForDietPlan() {
   return [

@@ -1,6 +1,6 @@
 import type { FastifyInstance } from 'fastify'
-import { generateDietPlan } from '../agent'
-import { DietPlanRequestSchema } from '../types'
+import { generateDietPlan } from '../agent.js'
+import { DietPlanRequestSchema } from '../types.js'
 
 export function dietPlanRoutes(app: FastifyInstance) {
   app.post('/diet-plan', async (request, reply) => {

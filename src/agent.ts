@@ -5,8 +5,8 @@ import {
   buildSystemPromptForTrainingPlan,
   buildUserPromptForDietPlan,
   buildUserPromptForTrainingPlan
-} from './prompt'
-import type { DietPlanRequest, TrainingPlanRequest } from './types'
+} from './prompt.js'
+import type { DietPlanRequest, TrainingPlanRequest } from './types.js'
 
 const gemini = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY as string

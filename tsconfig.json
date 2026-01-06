@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
     "rootDir": "./",
-    "outDir": "./dist",
+    "outDir": "dist",
 
-    "module": "esnext",
+    "module": "NodeNext",
     "target": "es2022",
     "types": ["node"],
     "lib": ["es2022"],
     "esModuleInterop": true,
-    "moduleResolution": "node",
+    "moduleResolution": "NodeNext",
 
     "sourceMap": true,
     "declaration": true,
@@ -24,5 +24,6 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true
-  }
+  },
+  "include": ["src/**/*", "api/**/*.ts"]
 }
