@@ -10,7 +10,7 @@ import { trainingPlanRoutes } from './routes/training-plan'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-const app = Fastify()
+export const app = Fastify()
 
 await app.register(cors, {
   origin: '*',
@@ -40,6 +40,6 @@ app.get('/test', (_req, res) => {
   res.send('Hello World')
 })
 
-app.listen({ port: Number(process.env.PORT) || 3333, host: "0.0.0.0" }).then(() => {
+app.listen({ port: Number(process.env.PORT) || 3333, host: '0.0.0.0' }).then(() => {
   console.log('🚀 HTTP server running! 📚 Docs available at http://localhost:3333/docs')
 })
