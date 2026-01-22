@@ -134,7 +134,7 @@ components:
           example: 78
         activityLevel:
           type: string
-          enum: [sedentary, 2x_week, 4x_week]
+          enum: [sedentary, 2/3x_week, 4x_week_or_+]
           description: nível de atividade física
           example: 2x_week
         gender:
