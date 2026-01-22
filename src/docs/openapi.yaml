@@ -1,6 +1,6 @@
 openapi: 3.0.3
 info:
-  title: Gerador de Dietas e Treinos de Academia com IA - API
+  title: DevFit - API
   description: |
     API que gera planos semanais de dieta e programas de treinamento através de um agente de IA.
     As respostas são transmitidas como stream SSE (`text/event-stream`).
