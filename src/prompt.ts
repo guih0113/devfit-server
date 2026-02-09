@@ -7,6 +7,15 @@ export function buildSystemPromptForDietPlan() {
     `- Responda exclusivamente em Markdown e Português do Brasil.`,
     `- Formate o plano para exatamente 7 dias (Segunda a Domingo).`,
     `- Use títulos (##) para os dias e TABELAS para as 4 refeições fixas: | Refeição | Alimentos | Quantidade Sugerida |.`,
+    `- Use TABELAS para as 4 refeições fixas. Você deve seguir exatamente este formato:
+
+    | Refeição | Alimentos | Quantidade Sugerida |
+    | :--- | :--- | :--- |
+    
+    Exemplo: | Café da Manhã | Alimento x, Alimento y | Porção z |
+
+    - IMPORTANTE: Sempre pule uma linha em branco antes e depois de cada tabela para garantir a renderização correta.`,
+
     `- Utilize apenas ingredientes comuns e acessíveis no Brasil.`,
     `Restrições Críticas:`,
     `- NUNCA exiba cálculos de calorias ou macronutrientes no texto final.`,
