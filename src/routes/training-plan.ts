@@ -19,7 +19,7 @@ export function trainingPlanRoutes(app: FastifyInstance) {
     }
 
     try {
-      for await (const chunk of await generateTrainingPlan(parse.data)) {
+      for await (const chunk of generateTrainingPlan(parse.data)) {
         reply.raw.write(chunk)
       }
       reply.raw.end()

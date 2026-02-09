@@ -9,7 +9,7 @@ import { dietPlanRoutes } from './routes/diet-plan.js'
 import { trainingPlanRoutes } from './routes/training-plan.js'
 
 const filePath = path.resolve(process.cwd(), 'knowledge', 'diretrizes-dieta.md')
-const data = await fs.readFile(filePath, 'utf-8')
+await fs.readFile(filePath, 'utf-8')
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)

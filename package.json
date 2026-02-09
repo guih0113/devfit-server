@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "start": "tsx src/server.ts",
-    "dev": "tsx --watch --env-file=.env src/server.ts"
+    "dev": "tsx --watch --env-file=.env src/server.ts",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +26,7 @@
     "@types/node": "^24.6.2",
     "@vercel/node": "^5.5.16",
     "tsx": "^4.20.6",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
   }
 }

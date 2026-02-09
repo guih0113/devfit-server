@@ -39,7 +39,7 @@ paths:
               age: 30
               height: 175
               weight: 78
-              activityLevel: 2x_week
+              activityLevel: 2/3x_week
               gender: masculine
               objective: maintain_weight
       responses:
